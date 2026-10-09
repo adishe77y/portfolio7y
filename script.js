@@ -14,3 +14,19 @@ setInterval(updateLiveClock, 1000);
                 clockEl.textContent = dateString + ' • ' + timeString;
             }
         }
+
+const schemaScript = document.createElement('script');
+schemaScript.type = 'application/ld+json';
+schemaScript.text = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Adithya Shetty",
+    "alternateName": "Adi",
+    "jobTitle": "Web Developer and Graphic Designer",
+    "image": "https://adishe77y.vercel.app/your-profile-pic.jpg",
+    "url": "https://adishe77y.vercel.app/"
+  }
+});
+document.head.appendChild(schemaScript);
