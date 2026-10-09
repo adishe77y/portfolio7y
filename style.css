@@ -115,7 +115,7 @@ h1, h2, h3, .heading-font {
 .bg-text {
     position: absolute;
     top: 15%; 
-    left: 48%;
+    left: 47.5%;
     transform: translateX(-50%);
     width: 100%;
     text-align: center;
